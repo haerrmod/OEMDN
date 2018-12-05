@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
 """
 :author: Jaroslaw Zima
-:contact: jaroslaw.zima@gmail.com
+:contact: jaroslaw.zima@nokia.com
 """

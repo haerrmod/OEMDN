@@ -6,7 +6,7 @@
 import aiohttp_jinja2
 
 
-@aiohttp_jinja2.template('base_index2.html')
+@aiohttp_jinja2.template('html/base_index.html')
 async def handle(request):
     return {
         'title': 'tajtel',
