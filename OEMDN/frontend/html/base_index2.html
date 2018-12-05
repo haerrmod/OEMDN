@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>[MDN] {{ title }}</title>
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+		<style>
+            {{ default_css_styles }}
+        </style>
+	</head>
+	<body>
+		<div class="__header">
+            Notebook: <span class="__orange_text">{{ notebook_title }}</span>
+		</div>
+		<div class="__main">
+			<div class="__compressed_overlay" onclick="__display_column(this)">
+				<div class="__vertical_text">TOPICS</div>
+			</div>
+			<div class="__column __topics">
+				<div>TOPICS</div>
+				<div>
+					{{ topics_content }}
+				</div>
+				<div onclick="__hide_column(this)">&lt;&lt;&lt;</div>
+			</div>
+			<div class="__compressed_overlay" onclick="__display_column(this)">
+				<div class="__vertical_text">SECTIONS</div>
+			</div>
+			<div class="__column __sections">
+				<div>SECTIONS</div>
+				<div>
+					{{ sections_content }}
+				</div>
+				<div onclick="__hide_column(this)">&lt;&lt;&lt;</div>
+			</div>
+			<div class="__content">
+				<div id="__content_file"></div>
+				<div id="__content">
+				</div>
+			</div>
+		</div>
+		<div class="__footer">
+            <span style="padding-left:10px;padding-right:10px;">MDNotebook - v.1.0.0</span> | <a href="https://wrgitlab.int.net.nokia.com/jzima/mdnotebook" target="blank"><span style="padding-left:10px;padding-right:10px;" class="__orange_text">gitlab</span></a>
+		</div>
+		<script>
+            {{ default_js_scripts }}
+		</script>
+	</body>
+</html>
